@@ -20,7 +20,13 @@ int main(int argc, char** argv) {
       continue;
     }
  
-    // do something
+    // split the line by space
+    string buf;
+    stringstream stream(line);
+    while (stream >> buf){
+      // do something with the token
+      
+    }
     
   }
   elev_file.close();                                                            
